@@ -1,0 +1,293 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/home/herlon/.sdkman/candidates/maven/current/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< tech.buildrun:orderms >------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ orderms ---
+[INFO] Deleting /home/herlon/projects/orderms/target
+[INFO] 
+[INFO] >>> spring-boot:4.1.1:run (default-cli) > test-compile @ orderms >>>
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ orderms ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ orderms ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 25] to target/classes
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ orderms ---
+[INFO] skip non existing resourceDirectory /home/herlon/projects/orderms/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ orderms ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 25] to target/test-classes
+[INFO] 
+[INFO] <<< spring-boot:4.1.1:run (default-cli) < test-compile @ orderms <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.1.1:run (default-cli) @ orderms ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-09-16T16:42:25.157-03:00  INFO 137745 --- [orderms] [           main] t.buildrun.orderms.OrdermsApplication    : Starting OrdermsApplication using Java 25.0.4 with PID 137745 (/home/herlon/projects/orderms/target/classes started by herlon in /home/herlon/projects/orderms)
+2026-09-16T16:42:25.159-03:00  INFO 137745 --- [orderms] [           main] t.buildrun.orderms.OrdermsApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-09-16T16:42:25.412-03:00  INFO 137745 --- [orderms] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-09-16T16:42:25.421-03:00  INFO 137745 --- [orderms] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2026-09-16T16:42:25.598-03:00  INFO 137745 --- [orderms] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-16T16:42:25.606-03:00  INFO 137745 --- [orderms] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-16T16:42:25.606-03:00  INFO 137745 --- [orderms] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-16T16:42:25.625-03:00  INFO 137745 --- [orderms] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 436 ms
+2026-09-16T16:42:25.911-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.cluster               : Starting monitoring for topology with ID ClusterId{value='6aaaf12193f1190b550b7c75', description='null'}
+2026-09-16T16:42:25.913-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.cluster               : Updating cluster description to  {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2026-09-16T16:42:25.913-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.cluster               : Description changed for topology with ID ClusterId{value='6aaaf12193f1190b550b7c75', description='null'}. Previous description: {type=UNKNOWN, servers=[]. New description: {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]
+2026-09-16T16:42:25.918-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.connection            : Connection pool created for localhost:27017 using options maxIdleTimeMS=0, minPoolSize=0, maxPoolSize=100, maxConnecting=2, waitQueueTimeoutMS=120000
+2026-09-16T16:42:25.920-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.cluster               : Starting monitoring for server localhost:27017 in topology with ID ClusterId{value='6aaaf12193f1190b550b7c75', description='null'}
+2026-09-16T16:42:25.921-03:00 DEBUG 137745 --- [orderms] [localhost:27017] org.mongodb.driver.cluster               : Checking status of localhost:27017
+2026-09-16T16:42:25.925-03:00 DEBUG 137745 --- [orderms] [localhost:27017] org.mongodb.driver.cluster               : Heartbeat started for localhost:27017 on connection with driver-generated ID 1 and server-generated ID null in topology with ID ClusterId{value='6aaaf12193f1190b550b7c75', description='null'}. Awaited: false
+2026-09-16T16:42:25.929-03:00  INFO 137745 --- [orderms] [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|spring-boot|sync", "version": "5.8.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.14.0-37-generic"}, "platform": "Java/Amazon.com Inc./25.0.4+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@784d9bc, com.mongodb.Jep395RecordCodecProvider@3a0aaaf0, com.mongodb.KotlinCodecProvider@426131d7, EnumCodecProvider{}]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-09-16T16:42:25.955-03:00  INFO 137745 --- [orderms] [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=28, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17113627, minRoundTripTimeNanos=0}
+2026-09-16T16:42:25.956-03:00 DEBUG 137745 --- [orderms] [localhost:27017] org.mongodb.driver.connection            : Connection pool ready for localhost:27017
+2026-09-16T16:42:25.957-03:00 DEBUG 137745 --- [orderms] [localhost:27017] org.mongodb.driver.cluster               : Updating cluster description to  {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=17.1 ms, state=CONNECTED}]
+2026-09-16T16:42:25.957-03:00 DEBUG 137745 --- [orderms] [localhost:27017] org.mongodb.driver.cluster               : Description changed for topology with ID ClusterId{value='6aaaf12193f1190b550b7c75', description='null'}. Previous description: {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING}]. New description: {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=17.1 ms, state=CONNECTED}]
+2026-09-16T16:42:25.957-03:00 DEBUG 137745 --- [orderms] [localhost:27017] org.mongodb.driver.cluster               : Checking status of localhost:27017
+2026-09-16T16:42:26.018-03:00 DEBUG 137745 --- [orderms] [           main] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class tech.buildrun.orderms.entity.OrderEntity for index information
+2026-09-16T16:42:26.037-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.cluster               : Server selection started for operation createIndexes with ID 5. Selector: WritableServerSelector, topology description: {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=17.1 ms, state=CONNECTED}]
+2026-09-16T16:42:26.039-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.cluster               : Server selection succeeded for operation createIndexes with ID 5. Selected server: localhost:27017. Selector: WritableServerSelector, topology description: {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=17.1 ms, state=CONNECTED}]
+2026-09-16T16:42:26.039-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.connection            : Checkout started for connection to localhost:27017
+2026-09-16T16:42:26.040-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.connection            : Connection created: address=localhost:27017, driver-generated ID=3
+2026-09-16T16:42:26.043-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.connection            : Connection ready: address=localhost:27017, driver-generated ID=3, established in=2 ms
+2026-09-16T16:42:26.044-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.connection            : Connection checked out: address=localhost:27017, driver-generated ID=3, duration=4 ms
+2026-09-16T16:42:26.052-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.protocol.command      : Command "createIndexes" started on database "test" using a connection with driver-generated ID 3 and server-generated ID 43 to localhost:27017. The request ID is 5 and the operation ID is 5. Command: {"createIndexes": "tb_orders", "indexes": [{"key": {"customerId": 1}, "name": "customer_id_index"}], "$db": "test", "lsid": {"id": {"$binary": {"base64": "hvYdg9HnRhq1yqMw3cb0OQ==", "subType": "04"}}}}
+2026-09-16T16:42:26.054-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.protocol.command      : Command "createIndexes" failed on database "test" in 3.662941 ms using a connection with driver-generated ID 3 and server-generated ID 43 to localhost:27017. The request ID is 5 and the operation ID is 5.
+
+com.mongodb.MongoCommandException: Command execution failed on MongoDB server with error 13 (Unauthorized): 'Command createIndexes requires authentication' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "Command createIndexes requires authentication", "code": 13, "codeName": "Unauthorized"}
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:210) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:570) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceiveInternal(InternalStreamConnection.java:494) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.lambda$sendAndReceive$1(InternalStreamConnection.java:383) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:386) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:111) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:757) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:60) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:207) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:112) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:82) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:74) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServer$OperationCountTrackingConnection.command(DefaultServer.java:297) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.lambda$executeCommand$6(SyncOperationHelper.java:223) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.lambda$withSourceAndConnection$1(SyncOperationHelper.java:146) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.withSuppliedResource(SyncOperationHelper.java:177) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.lambda$withSourceAndConnection$2(SyncOperationHelper.java:142) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.withSuppliedResource(SyncOperationHelper.java:177) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.withSourceAndConnection(SyncOperationHelper.java:138) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.executeCommand(SyncOperationHelper.java:221) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.CreateIndexesOperation.execute(CreateIndexesOperation.java:117) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.CreateIndexesOperation.execute(CreateIndexesOperation.java:61) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.client.internal.MongoClusterImpl$OperationExecutorImpl.execute(MongoClusterImpl.java:474) ~[mongodb-driver-sync-5.8.1.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:942) ~[mongodb-driver-sync-5.8.1.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:924) ~[mongodb-driver-sync-5.8.1.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:919) ~[mongodb-driver-sync-5.8.1.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:904) ~[mongodb-driver-sync-5.8.1.jar:na]
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.lambda$createIndex$0(DefaultIndexOperations.java:131) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:632) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.execute(DefaultIndexOperations.java:217) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.createIndex(DefaultIndexOperations.java:121) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.IndexOperations.ensureIndex(IndexOperations.java:40) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.createIndex(MongoPersistentEntityIndexCreator.java:151) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.checkForAndCreateIndexes(MongoPersistentEntityIndexCreator.java:141) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.checkForIndexes(MongoPersistentEntityIndexCreator.java:125) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.<init>(MongoPersistentEntityIndexCreator.java:94) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.<init>(MongoPersistentEntityIndexCreator.java:71) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.MongoTemplate.<init>(MongoTemplate.java:276) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.boot.data.mongodb.autoconfigure.MongoDatabaseFactoryDependentConfiguration.mongoTemplate(MongoDatabaseFactoryDependentConfiguration.java:54) ~[spring-boot-data-mongodb-4.1.1.jar:4.1.1]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1360) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1191) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.1.jar:4.1.1]
+	at tech.buildrun.orderms.OrdermsApplication.main(OrdermsApplication.java:10) ~[classes/:na]
+
+2026-09-16T16:42:26.057-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.connection            : Connection checked in: address=localhost:27017, driver-generated ID=3
+2026-09-16T16:42:26.058-03:00  WARN 137745 --- [orderms] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/data/mongodb/autoconfigure/MongoDatabaseFactoryDependentConfiguration.class]: Failed to instantiate [org.springframework.data.mongodb.core.MongoTemplate]: Factory method 'mongoTemplate' threw exception with message: Command execution failed on MongoDB server with error 13 (Unauthorized): 'Command createIndexes requires authentication' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "Command createIndexes requires authentication", "code": 13, "codeName": "Unauthorized"}
+2026-09-16T16:42:26.059-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.cluster               : Server selection started for operation with ID 1. Selector: ReadPreferenceServerSelector{readPreference=ReadPreference{name=primaryPreferred, hedgeOptions=null}}, topology description: {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=17.1 ms, state=CONNECTED}]
+2026-09-16T16:42:26.059-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.cluster               : Server selection succeeded for operation with ID 1. Selected server: localhost:27017. Selector: ReadPreferenceServerSelector{readPreference=ReadPreference{name=primaryPreferred, hedgeOptions=null}}, topology description: {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=17.1 ms, state=CONNECTED}]
+2026-09-16T16:42:26.059-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.connection            : Checkout started for connection to localhost:27017
+2026-09-16T16:42:26.059-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.connection            : Connection checked out: address=localhost:27017, driver-generated ID=3, duration=0 ms
+2026-09-16T16:42:26.060-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.protocol.command      : Command "endSessions" started on database "admin" using a connection with driver-generated ID 3 and server-generated ID 43 to localhost:27017. The request ID is 6 and the operation ID is 1. Command: {"endSessions": [{"id": {"$binary": {"base64": "hvYdg9HnRhq1yqMw3cb0OQ==", "subType": "04"}}}], "$db": "admin", "$readPreference": {"mode": "primaryPreferred"}}
+2026-09-16T16:42:26.061-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.protocol.command      : Command "endSessions" failed on database "admin" in 1.056283 ms using a connection with driver-generated ID 3 and server-generated ID 43 to localhost:27017. The request ID is 6 and the operation ID is 1.
+
+com.mongodb.MongoCommandException: Command execution failed on MongoDB server with error 13 (Unauthorized): 'Command endSessions requires authentication' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "Command endSessions requires authentication", "code": 13, "codeName": "Unauthorized"}
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:210) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:570) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceiveInternal(InternalStreamConnection.java:494) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.lambda$sendAndReceive$1(InternalStreamConnection.java:383) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:386) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:111) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:757) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:60) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:207) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:112) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:82) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:74) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServer$OperationCountTrackingConnection.command(DefaultServer.java:297) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.session.ServerSessionPool.endClosedSessions(ServerSessionPool.java:158) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.session.ServerSessionPool.close(ServerSessionPool.java:116) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.client.internal.MongoClientImpl.close(MongoClientImpl.java:125) ~[mongodb-driver-sync-5.8.1.jar:na]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:230) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:795) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:745) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1507) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:704) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1500) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1246) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:644) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.1.jar:4.1.1]
+	at tech.buildrun.orderms.OrdermsApplication.main(OrdermsApplication.java:10) ~[classes/:na]
+
+2026-09-16T16:42:26.061-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.connection            : Connection checked in: address=localhost:27017, driver-generated ID=3
+2026-09-16T16:42:26.062-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.connection            : Connection closed: address=localhost:27017, driver-generated ID=3. Reason: Connection pool was closed.
+2026-09-16T16:42:26.062-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.connection            : Connection pool closed for localhost:27017
+2026-09-16T16:42:26.062-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.cluster               : Stopped monitoring for server localhost:27017 in topology with ID ClusterId{value='6aaaf12193f1190b550b7c75', description='null'}
+2026-09-16T16:42:26.063-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.cluster               : Description changed for topology with ID ClusterId{value='6aaaf12193f1190b550b7c75', description='null'}. Previous description: {type=STANDALONE, servers=[{address=localhost:27017, type=STANDALONE, roundTripTime=17.1 ms, state=CONNECTED}]. New description: {type=UNKNOWN, servers=[]
+2026-09-16T16:42:26.063-03:00 DEBUG 137745 --- [orderms] [           main] org.mongodb.driver.cluster               : Stopped monitoring for topology with ID ClusterId{value='6aaaf12193f1190b550b7c75', description='null'}
+2026-09-16T16:42:26.063-03:00 DEBUG 137745 --- [orderms] [localhost:27017] org.mongodb.driver.cluster               : Heartbeat failed in 105 ms for localhost:27017 on connection with driver-generated ID 1 and server-generated ID 41 in topology with ID ClusterId{value='6aaaf12193f1190b550b7c75', description='null'}. Awaited: true. Failure: Interrupted while receiving message
+2026-09-16T16:42:26.067-03:00  INFO 137745 --- [orderms] [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-09-16T16:42:26.072-03:00  INFO 137745 --- [orderms] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-16T16:42:26.078-03:00 ERROR 137745 --- [orderms] [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoTemplate' defined in class path resource [org/springframework/boot/data/mongodb/autoconfigure/MongoDatabaseFactoryDependentConfiguration.class]: Failed to instantiate [org.springframework.data.mongodb.core.MongoTemplate]: Factory method 'mongoTemplate' threw exception with message: Command execution failed on MongoDB server with error 13 (Unauthorized): 'Command createIndexes requires authentication' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "Command createIndexes requires authentication", "code": 13, "codeName": "Unauthorized"}
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1360) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1191) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.1.jar:4.1.1]
+	at tech.buildrun.orderms.OrdermsApplication.main(OrdermsApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.mongodb.core.MongoTemplate]: Factory method 'mongoTemplate' threw exception with message: Command execution failed on MongoDB server with error 13 (Unauthorized): 'Command createIndexes requires authentication' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "Command createIndexes requires authentication", "code": 13, "codeName": "Unauthorized"}
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:183) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-7.0.9.jar:7.0.9]
+	... 21 common frames omitted
+Caused by: org.springframework.data.mongodb.UncategorizedMongoDbException: Command execution failed on MongoDB server with error 13 (Unauthorized): 'Command createIndexes requires authentication' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "Command createIndexes requires authentication", "code": 13, "codeName": "Unauthorized"}
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.doTranslateException(MongoExceptionTranslator.java:155) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:74) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:3202) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:634) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.execute(DefaultIndexOperations.java:217) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.createIndex(DefaultIndexOperations.java:121) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.IndexOperations.ensureIndex(IndexOperations.java:40) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.createIndex(MongoPersistentEntityIndexCreator.java:151) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.checkForAndCreateIndexes(MongoPersistentEntityIndexCreator.java:141) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.checkForIndexes(MongoPersistentEntityIndexCreator.java:125) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.<init>(MongoPersistentEntityIndexCreator.java:94) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.index.MongoPersistentEntityIndexCreator.<init>(MongoPersistentEntityIndexCreator.java:71) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.MongoTemplate.<init>(MongoTemplate.java:276) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.boot.data.mongodb.autoconfigure.MongoDatabaseFactoryDependentConfiguration.mongoTemplate(MongoDatabaseFactoryDependentConfiguration.java:54) ~[spring-boot-data-mongodb-4.1.1.jar:4.1.1]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155) ~[spring-beans-7.0.9.jar:7.0.9]
+	... 24 common frames omitted
+Caused by: com.mongodb.MongoCommandException: Command execution failed on MongoDB server with error 13 (Unauthorized): 'Command createIndexes requires authentication' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "Command createIndexes requires authentication", "code": 13, "codeName": "Unauthorized"}
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:210) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:570) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceiveInternal(InternalStreamConnection.java:494) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.lambda$sendAndReceive$1(InternalStreamConnection.java:383) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:386) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.sendAndReceive(UsageTrackingInternalConnection.java:111) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.sendAndReceive(DefaultConnectionPool.java:757) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.CommandProtocolImpl.execute(CommandProtocolImpl.java:60) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServer$DefaultServerProtocolExecutor.execute(DefaultServer.java:207) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerConnection.executeProtocol(DefaultServerConnection.java:112) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:82) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServerConnection.command(DefaultServerConnection.java:74) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServer$OperationCountTrackingConnection.command(DefaultServer.java:297) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.lambda$executeCommand$6(SyncOperationHelper.java:223) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.lambda$withSourceAndConnection$1(SyncOperationHelper.java:146) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.withSuppliedResource(SyncOperationHelper.java:177) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.lambda$withSourceAndConnection$2(SyncOperationHelper.java:142) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.withSuppliedResource(SyncOperationHelper.java:177) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.withSourceAndConnection(SyncOperationHelper.java:138) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.executeCommand(SyncOperationHelper.java:221) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.CreateIndexesOperation.execute(CreateIndexesOperation.java:117) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.internal.operation.CreateIndexesOperation.execute(CreateIndexesOperation.java:61) ~[mongodb-driver-core-5.8.1.jar:na]
+	at com.mongodb.client.internal.MongoClusterImpl$OperationExecutorImpl.execute(MongoClusterImpl.java:474) ~[mongodb-driver-sync-5.8.1.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.executeCreateIndexes(MongoCollectionImpl.java:942) ~[mongodb-driver-sync-5.8.1.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:924) ~[mongodb-driver-sync-5.8.1.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndexes(MongoCollectionImpl.java:919) ~[mongodb-driver-sync-5.8.1.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.createIndex(MongoCollectionImpl.java:904) ~[mongodb-driver-sync-5.8.1.jar:na]
+	at org.springframework.data.mongodb.core.DefaultIndexOperations.lambda$createIndex$0(DefaultIndexOperations.java:131) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:632) ~[spring-data-mongodb-5.1.1.jar:5.1.1]
+	... 37 common frames omitted
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.355 s
+[INFO] Finished at: 2026-09-16T16:42:26-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.1.1:run (default-cli) on project orderms: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
