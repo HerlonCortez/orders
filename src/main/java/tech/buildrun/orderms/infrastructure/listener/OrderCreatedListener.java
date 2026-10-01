@@ -1,21 +1,21 @@
-package tech.buildrun.orderms.listener;
+package tech.buildrun.orderms.infrastructure.listener;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.messaging.Message;
 import org.springframework.stereotype.Component;
-import tech.buildrun.orderms.listener.dto.OrderCreatedEvent;
-import tech.buildrun.orderms.service.OrderService;
+import tech.buildrun.orderms.infrastructure.listener.dto.OrderCreatedEvent;
+import tech.buildrun.orderms.domain.service.impl.OrderServiceImpl;
 
 import static tech.buildrun.orderms.config.RabbitMqConfig.ORDER_CREATED_QUEUE;
 
 @Component
 public class OrderCreatedListener {
     private static final Logger log = LoggerFactory.getLogger(OrderCreatedListener.class);
-    private final OrderService orderService;
+    private final OrderServiceImpl orderService;
 
-    public OrderCreatedListener(OrderService orderService) {
+    public OrderCreatedListener(OrderServiceImpl orderService) {
         this.orderService = orderService;
     }
 
