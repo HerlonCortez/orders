@@ -1,9 +1,9 @@
-package tech.buildrun.orderms.repository;
+package tech.buildrun.orderms.infrastructure.repository;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import tech.buildrun.orderms.entity.OrderEntity;
+import tech.buildrun.orderms.domain.entity.OrderEntity;
 
 public interface OrderRepository extends MongoRepository<OrderEntity, Long> {
     Page<OrderEntity> findAllByCustomerId(Long customerId, PageRequest pageRequest);

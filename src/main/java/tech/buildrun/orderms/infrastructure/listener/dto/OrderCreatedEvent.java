@@ -1,6 +1,4 @@
-package tech.buildrun.orderms.listener.dto;
-
-import tech.buildrun.orderms.entity.OrderItem;
+package tech.buildrun.orderms.infrastructure.listener.dto;
 
 import java.util.List;
 

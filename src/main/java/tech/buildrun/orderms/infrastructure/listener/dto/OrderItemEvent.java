@@ -1,4 +1,4 @@
-package tech.buildrun.orderms.listener.dto;
+package tech.buildrun.orderms.infrastructure.listener.dto;
 
 import java.math.BigDecimal;
 

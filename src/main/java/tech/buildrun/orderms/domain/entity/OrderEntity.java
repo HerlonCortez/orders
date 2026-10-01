@@ -1,4 +1,4 @@
-package tech.buildrun.orderms.entity;
+package tech.buildrun.orderms.domain.entity;
 
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;

@@ -1,6 +1,6 @@
 package tech.buildrun.orderms.controller.dto;
 
-import tech.buildrun.orderms.entity.OrderEntity;
+import tech.buildrun.orderms.domain.entity.OrderEntity;
 
 import java.math.BigDecimal;
 
